@@ -24,22 +24,18 @@ class LatestTransactionListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 300,
-      child: ListView.builder(
-        itemCount: items.length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          return IntrinsicWidth(
-            child: UserInfoListTile(
-              userInfoModel: UserInfoModel(
-                image: items[index].image,
-                title: items[index].title,
-                subTitle: items[index].subTitle,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: items
+            .map(
+              (e) => IntrinsicWidth(
+                child: UserInfoListTile(
+                  userInfoModel: e,
+                ),
               ),
-            ),
-          );
-        },
+            )
+            .toList(),
       ),
     );
   }
