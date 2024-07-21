@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin_dashboard/core/utils/app_styles.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
+  const CustomTextField({super.key, required this.hintText});
+
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +15,10 @@ class CustomTextField extends StatelessWidget {
         border: buildBorder(),
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),
+        hintStyle: AppStyles.styleRegular16.copyWith(
+          color: const Color(0xffAAAAAA),
+        ),
+        hintText: hintText,
       ),
     );
   }
