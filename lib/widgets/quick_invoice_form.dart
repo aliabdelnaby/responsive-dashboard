@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin_dashboard/core/utils/app_styles.dart';
+import 'package:responsive_admin_dashboard/widgets/custom_btn.dart';
 import 'package:responsive_admin_dashboard/widgets/title_text_field.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
@@ -6,9 +8,9 @@ class QuickInvoiceForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        Row(
+        const Row(
           children: [
             Expanded(
               child: TitleTextField(
@@ -25,8 +27,8 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 24),
-        Row(
+        const SizedBox(height: 24),
+        const Row(
           children: [
             Expanded(
               child: TitleTextField(
@@ -39,6 +41,30 @@ class QuickInvoiceForm extends StatelessWidget {
               child: TitleTextField(
                 title: "Item mount",
                 hintText: "USD",
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 24),
+        Row(
+          children: [
+            Expanded(
+              child: CustomBtn(
+                onPressed: () {},
+                text: "Add More details",
+                backgroundColor: Colors.white,
+                textStyle: AppStyles.styleSemiBold18.copyWith(
+                  color: const Color(0xff4EB7F2),
+                ),
+              ),
+            ),
+            const SizedBox(width: 24),
+            Expanded(
+              child: CustomBtn(
+                onPressed: () {},
+                text: "Send Money",
+                backgroundColor: const Color(0xff4EB7F2),
+                textStyle: AppStyles.styleSemiBold18,
               ),
             ),
           ],
