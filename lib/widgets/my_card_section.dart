@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_admin_dashboard/core/utils/app_styles.dart';
-import 'package:responsive_admin_dashboard/views/dots_indicator.dart';
+import 'package:responsive_admin_dashboard/widgets/dots_indicator.dart';
 import 'package:responsive_admin_dashboard/widgets/my_cards_page_view.dart';
 
 class MyCardSection extends StatefulWidget {
@@ -39,6 +39,7 @@ class _MyCardSectionState extends State<MyCardSection> {
         DotsIndicator(
           currentPageIndex: currentPageIndex,
         ),
+        
       ],
     );
   }
