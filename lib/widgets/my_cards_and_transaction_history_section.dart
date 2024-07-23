@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_admin_dashboard/widgets/custom_background_container.dart';
+import 'package:responsive_admin_dashboard/widgets/income_section.dart';
 import 'package:responsive_admin_dashboard/widgets/my_card_section.dart';
 import 'package:responsive_admin_dashboard/widgets/transaction_history.dart';
 
@@ -17,6 +18,7 @@ class MyCardsAndTransactionHistorySection extends StatelessWidget {
             color: Color(0xffF1F1F1),
           ),
           TransactionHistory(),
+          IncomeSection(),
         ],
       ),
     );

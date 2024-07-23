@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_admin_dashboard/core/utils/app_styles.dart';
 
 class RangeOptions extends StatelessWidget {
-  const RangeOptions({
-    super.key,
-  });
+  const RangeOptions({super.key});
 
   @override
   Widget build(BuildContext context) {
