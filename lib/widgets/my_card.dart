@@ -35,7 +35,7 @@ class MyCard extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              subtitle: const Text(
+              subtitle: Text(
                 "Ali Abdelnaby",
                 style: AppStyles.styleMedium20,
               ),

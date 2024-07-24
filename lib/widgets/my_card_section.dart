@@ -29,7 +29,7 @@ class _MyCardSectionState extends State<MyCardSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(
+        SizedBox(
           width: 420,
           child: Text("My card", style: AppStyles.styleSemiBold20),
         ),
@@ -39,7 +39,6 @@ class _MyCardSectionState extends State<MyCardSection> {
         DotsIndicator(
           currentPageIndex: currentPageIndex,
         ),
-        
       ],
     );
   }
