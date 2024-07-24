@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_admin_dashboard/core/utils/size_config.dart';
 import 'package:responsive_admin_dashboard/widgets/adaptive_layout_widget.dart';
 import 'package:responsive_admin_dashboard/widgets/custom_drawer.dart';
 import 'package:responsive_admin_dashboard/widgets/dashboard_desktop_layout.dart';
@@ -16,13 +17,12 @@ class _DashBoardViewState extends State<DashBoardView> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       key: _scaffoldKey,
       backgroundColor: const Color(0xFFF7F9FA),
-      appBar:
-          MediaQuery.of(context).size.width < 800 ? buildMobileAppBar() : null,
-      drawer:
-          MediaQuery.of(context).size.width < 800 ? const CustomDrawer() : null,
+      appBar: width < SizeConfig.tablet ? buildMobileAppBar() : null,
+      drawer: width < SizeConfig.tablet ? const CustomDrawer() : null,
       body: AdaptiveLayout(
         mobileLayout: (context) => const DashboardMobileLayout(),
         tabletLayout: (context) => const DashboardTabletLayout(),
