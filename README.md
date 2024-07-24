@@ -1,1 +1,1 @@
-# Responsive Admin Dashboard
+# Responsive Dashboard
