@@ -44,7 +44,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
           title: touchedIndex == 0 ? 'Design service' : '40%',
           radius: touchedIndex == 0 ? 60 : 50,
           color: const Color(0xff208BC7),
-          titleStyle: AppStyles.styleMedium16
+          titleStyle: AppStyles.styleMedium16(context)
               .copyWith(color: touchedIndex == 0 ? null : Colors.white),
         ),
         PieChartSectionData(
@@ -53,7 +53,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
           title: touchedIndex == 1 ? 'Design product' : '25%',
           radius: touchedIndex == 1 ? 60 : 50,
           color: const Color(0xff4DB7F2),
-          titleStyle: AppStyles.styleMedium16
+          titleStyle: AppStyles.styleMedium16(context)
               .copyWith(color: touchedIndex == 1 ? null : Colors.white),
         ),
         PieChartSectionData(
@@ -62,7 +62,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
           title: touchedIndex == 2 ? 'Product royalty' : '20%',
           radius: touchedIndex == 2 ? 60 : 50,
           color: const Color(0xff064060),
-          titleStyle: AppStyles.styleMedium16
+          titleStyle: AppStyles.styleMedium16(context)
               .copyWith(color: touchedIndex == 2 ? null : Colors.white),
         ),
         PieChartSectionData(
@@ -71,7 +71,7 @@ class _IncomeChartState extends State<DetailedIncomeChart> {
           title: touchedIndex == 3 ? 'Other' : '22%',
           radius: touchedIndex == 3 ? 60 : 50,
           color: const Color(0xFFE2DECD),
-          titleStyle: AppStyles.styleMedium16
+          titleStyle: AppStyles.styleMedium16(context)
               .copyWith(color: touchedIndex == 3 ? null : Colors.white),
         ),
       ],

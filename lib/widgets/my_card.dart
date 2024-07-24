@@ -31,13 +31,13 @@ class MyCard extends StatelessWidget {
                   const EdgeInsets.only(right: 42, left: 32, top: 16),
               title: Text(
                 "Name Card",
-                style: AppStyles.styleRegular16.copyWith(
+                style: AppStyles.styleRegular16(context).copyWith(
                   color: Colors.white,
                 ),
               ),
               subtitle: Text(
                 "Ali Abdelnaby",
-                style: AppStyles.styleMedium20,
+                style: AppStyles.styleMedium20(context),
               ),
               trailing: SvgPicture.asset(
                 Assets.imagesGallery,
@@ -52,12 +52,12 @@ class MyCard extends StatelessWidget {
                   Text(
                     "5533 3333 3333 3335",
                     style:
-                        AppStyles.styleSemiBold24.copyWith(color: Colors.white),
+                        AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
                   ),
                   Text(
                     "12/25 - 124",
                     style:
-                        AppStyles.styleRegular16.copyWith(color: Colors.white),
+                        AppStyles.styleRegular16(context).copyWith(color: Colors.white),
                   ),
                 ],
               ),

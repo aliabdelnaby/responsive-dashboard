@@ -19,7 +19,7 @@ class InActiveDrawerItem extends StatelessWidget {
       ),
       title: Text(
         drawerItemModel.title,
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }
