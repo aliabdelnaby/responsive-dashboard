@@ -51,18 +51,18 @@ class MyCard extends StatelessWidget {
                 children: [
                   Text(
                     "5533 3333 3333 3335",
-                    style:
-                        AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
+                    style: AppStyles.styleSemiBold24(context)
+                        .copyWith(color: Colors.white),
                   ),
                   Text(
                     "12/25 - 124",
-                    style:
-                        AppStyles.styleRegular16(context).copyWith(color: Colors.white),
+                    style: AppStyles.styleRegular16(context)
+                        .copyWith(color: Colors.white),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 26),
+            const Flexible(child: SizedBox(height: 26)),
           ],
         ),
       ),
